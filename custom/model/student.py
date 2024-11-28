@@ -22,7 +22,6 @@ class Student():
             accStudent = input('Da li zelite da prijavite studenta? (y/n) ').strip().lower()
 
             if accStudent == 'y':
-                # Accept student information
                 while True:
                     firstNameInput = input('Ime: ')
                     lastNameInput = input('Prezime: ')
@@ -49,7 +48,7 @@ class Student():
                     else:
                         break
 
-                gradeInput = ''  # Initial grade is empty
+                gradeInput = '' 
                 new_student = Student(firstNameInput, lastNameInput, rollNumInput, subjectInput, gradeInput, facultyInput)
                 studentList.append(new_student)
                 new_student.display()
